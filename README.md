@@ -1,66 +1,51 @@
-# Deep Learning with PyTorch: Build an AutoEncoder
+# Tenova Main Repository
 
-This repository contains materials and code for building an AutoEncoder
-using PyTorch. It includes a complete Jupyter Notebook implementation,
-helper utilities, and illustrative images for understanding
-encoder--decoder architecture and denoising AutoEncoders.
+This repository contains a collection of MATLAB scripts developed for
+signal processing, multivariate statistical analysis, and
+time--frequency-based fault detection workflows. The scripts focus on
+Hotelling's T² computations, wavelet-based denoising, and time-domain
+analysis.
 
 ## 📁 Repository Structure
 
-    Deep-Learning-with-PyTorch-Build-an-AutoEncoder-main/
+    Tenova-main/
     │
-    ├── README.md
-    └── Project-files/
-        ├── Build an AutoEncoder.ipynb
-        ├── helper.py
-        ├── dataset.png
-        └── denoising_autoencoder.png
+    ├── Hotteling_article.m
+    ├── Time_Analysis.m
+    └── WaveDenoise.m
 
-## 📄 Contents
+## 📄 Script Descriptions
 
-### **1. Build an AutoEncoder.ipynb**
+### **1. Hotteling_article.m**
 
-A fully implemented notebook demonstrating: - Construction of encoder
-and decoder networks\
-- Training a basic AutoEncoder\
-- Visualizing reconstructions\
-- Extending the model to a denoising AutoEncoder
+Implements Hotelling's T² multivariate statistical analysis for fault
+detection and anomaly monitoring.
 
-### **2. helper.py**
+### **2. Time_Analysis.m**
 
-Contains utility functions used within the notebook, such as data
-loading, plotting, and preprocessing helpers.
+Performs time-domain feature extraction and signal analysis.
 
-### **3. Images**
+### **3. WaveDenoise.m**
 
--   **dataset.png** --- Sample dataset visualization.\
--   **denoising_autoencoder.png** --- Diagram illustrating the denoising
-    AutoEncoder architecture.
+Applies wavelet-based denoising using wavelet decomposition and
+thresholding.
 
 ## 🚀 Getting Started
 
-### Requirements
+### Prerequisites
 
--   Python 3.8+
--   PyTorch\
--   NumPy\
--   Matplotlib\
--   Jupyter Notebook
+-   MATLAB R2018b or later
+-   Wavelet Toolbox
+-   Statistics and Machine Learning Toolbox
 
-Install dependencies:
+### Running the Scripts
 
-``` bash
-pip install torch numpy matplotlib jupyter
-```
-
-### Running the Notebook
-
-``` bash
-jupyter notebook "Build an AutoEncoder.ipynb"
+``` matlab
+addpath('path_to/Tenova-main');
+Hotteling_article
 ```
 
 ## 📬 Contact
 
-If you need help modifying the AutoEncoder, extending it to
-convolutional layers, or applying it to your own dataset, feel free to
-ask!
+If you need help interpreting any part of the code or integrating these
+scripts into a workflow, feel free to ask.
